@@ -9,6 +9,8 @@ html,
 body {
     width: 100%;
     height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .navebar {
@@ -24,7 +26,7 @@ body {
 
 .navebar img {
     height: 4rem;
-   
+
 }
 
 .nav-icon {
@@ -32,8 +34,8 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    
-    font-size:0.8rem ;
+
+    font-size: 0.8rem;
 
 }
 
@@ -56,12 +58,12 @@ body {
 
 #home:hover {
     color: rgb(49, 94, 230);
-    
+
 }
 
 #breeds:hover {
     color: rgb(49, 94, 230);
-    
+
 }
 
 #semen:hover {
@@ -70,22 +72,22 @@ body {
 
 #works:hover {
     color: rgb(49, 94, 230);
-    
+
 }
 
 #docteor:hover {
     color: rgb(49, 94, 230);
-    
+
 }
 
 #about:hover {
     color: rgb(49, 94, 230);
-    
+
 }
 
 #contact:hover {
     color: rgb(49, 94, 230);
-    
+
 }
 
 .nav-icon button:hover {
@@ -97,43 +99,44 @@ body {
 
 }
 
-.hero{
+.hero {
     background-color: rgb(235, 229, 229);
     width: 100%;
     height: 600px;
     display: flex;
 }
 
-.hero_info{
+.hero_info {
     margin: 30px;
     width: 50%;
     height: 90%;
-    /* background-color: blue; */
     border-radius: 30px;
 }
-.hero_img
-{
+
+.hero_img {
     margin: 30px;
     width: 50%;
     height: 90%;
-    background-color: rgb(140, 140, 234);
     border-radius: 30px;
 
 }
 
-.hero_info h1{
+.hero_info h1 {
     font-size: 3rem;
 }
-.hero_info h2{
+
+.hero_info h2 {
     font-size: 3rem;
-    color:green
+    color: green
 }
-.hero_info p{
+
+.hero_info p {
     margin-top: 5px;
-    color:rgba(126, 129, 126, 0.837);
+    color: rgba(126, 129, 126, 0.837);
     font-weight: 600;
 }
-.hero_info button{
+
+.hero_info button {
     margin-top: 30px;
     /* width: 100px; */
     /* height: 30px; */
@@ -145,11 +148,12 @@ body {
 }
 
 
-#btn1{
+#btn1 {
     background-color: green;
     color: white;
 }
-#btn2{
+
+#btn2 {
     color: green;
 }
 
@@ -159,7 +163,7 @@ body {
     gap: 40px;
 }
 
-.strong > div {
+.strong>div {
     display: flex;
     flex-direction: column;
 }
@@ -174,50 +178,146 @@ body {
     overflow: hidden;
 }
 
-.hero-img{
-    
+.hero-img {
     width: 100%;
     border-radius: 20px;
-    position: relative; 
+    position: relative;
 }
 
-.hero_img img{
+.hero_img img {
     height: 100%;
     width: 100%;
-    
 }
 
-.floating-card{    
-    background: white;
-    padding: 14px 18px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.check{
-    width: 40px;
-    height: 40px;
-    background: #E8F5E9;
-    color: #2E7D32;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.floating-card p{
+.floating-card p {
     margin: 2px 0 0;
     color: #666;
     font-size: 13px;
 }
 
-.breeds{
-    margin-top: 70px;
+.breeds {
     display: flex;
     align-items: center;
-    gap: 30px;
+}
+
+.section3 {
+    margin-top: 100px;
+    width: 100%;
+
+    margin: 30px;
+    overflow: hidden;
+
+}
+.breed {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breed-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.breed-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    color: green;
+}
+
+.breed-right p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.breed-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    gap: 10px;
+}
+.card{
+    height: 500px;
+    width: 300px;
+    background-color: #666;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-card{
+    width: 100%;
+    height: 55%;
+  
+}
+
+.img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 20px 20px 0 0;
+    display: block;
+
+}
+
+.info-card{
+    padding: 20px;
+    width: 100%;
+    height: 45%;
+   background-color: rgb(235, 232, 227);
+   box-sizing: border-box;
+}
+.info-card h3{
+    color: red;
+
+}
+.info-card h1{
+    color: rgb(50, 59, 54);
+}
+
+.info-card p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.info-card button{
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff0404;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    /* display: flex; */
+
+}
+.info-card i{
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    height: 50px;
+    background-color: white;
+    color: #ff0404;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+.info-card button:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 0 0 10px rgba(43, 29, 29, 0.9);
+    background-color: rgb(62, 49, 49);
+    color:white;
+    
 }
