@@ -16,7 +16,7 @@ body {
 
 .navebar {
     width: 100%;
-    height: 6rem;
+    height: 5rem;
     background-color: rgb(219, 213, 213);
     display: flex;
     align-items: center;
@@ -35,9 +35,16 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-
+    
     font-size: 0.8rem;
 
+}
+
+.nav-icon a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2f2c2a;
 }
 
 .nav-icon button {
