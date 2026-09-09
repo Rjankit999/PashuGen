@@ -11,6 +11,7 @@ body {
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    background-color: rgb(227, 229, 216);
 }
 
 .navebar {
@@ -205,7 +206,7 @@ body {
     width: 100%;
 
     margin: 30px;
-    overflow: hidden;
+    overflow: visible;
 
 }
 .breed {
@@ -231,7 +232,7 @@ body {
     align-items: center;
 }
 
-span {
+span h1{
     color: green;
 }
 
@@ -320,4 +321,288 @@ span {
     background-color: rgb(62, 49, 49);
     color:white;
     
+}
+
+.card{
+    transition: 0.2s;
+}
+.card:hover{
+   
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.837);
+}
+
+.works{
+    padding: 10px;
+    height: 450px;
+    width: 100%;
+    background-color: rgb(232, 216, 216);
+
+}
+
+.work-info{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    height: 45%;
+    width: 100%;
+    
+}
+
+.work-info p{
+    font-weight: 600;
+    color: rgb(24, 26, 27);
+}
+
+#pashugen{
+    color: green;
+}
+.work-icon{
+    height: 55%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+.work-stape{
+    
+    height: 200px;
+    width: 200px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.box {
+    height: 45px;
+    width: 45px;
+    background-color: #7e6464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   
+}
+.box i{
+    color: white;
+    font-size: 20px;
+}
+.material-symbols-outlined{
+    color: white;
+}
+.line{
+   
+    height: 200px;
+    
+    border: 1px solid;
+}
+
+.work-icon h2{
+    color: rgb(39, 36, 36);
+}
+.work-icon p{
+    font-weight: 400;
+}
+
+
+
+.pashugen-footer {
+    width: 100%;
+    background-color: #2f2c2a;
+    color: white;
+    padding: 70px 7% 0;
+}
+
+/* Main Footer */
+.footer-container {
+    max-width: 1400px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 1.4fr;
+    gap: 60px;
+
+    padding-bottom: 55px;
+}
+
+
+/* Brand */
+.footer-brand h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.footer-brand h2 span {
+    color: #21a447;
+}
+
+.footer-brand p {
+    max-width: 300px;
+    color: #d5d0cc;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+/* Social */
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.footer-social a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #74635f;
+
+    color: white;
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    background-color: #21a447;
+    transform: translateY(-5px);
+}
+
+
+/* Heading */
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* Links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer-links a {
+    color: #d5d0cc;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #21a447;
+    transform: translateX(5px);
+}
+
+
+/* Contact */
+.footer-contact p {
+    color: #d5d0cc;
+    margin-bottom: 17px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 15px;
+}
+
+.footer-contact i {
+    color: #21a447;
+    font-size: 20px;
+}
+
+
+/* Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    color: #bdb7b3;
+    font-size: 14px;
+}
+
+.footer-bottom p span {
+    color: #21a447;
+}
+
+.footer-bottom div {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-bottom a {
+    color: #bdb7b3;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #21a447;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .pashugen-footer {
+        padding: 50px 25px 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-bottom div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
