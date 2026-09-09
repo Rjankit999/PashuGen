@@ -45,37 +45,39 @@ body {
     height: 100%;
     background-color: rgba(121, 94, 94, 0.585);
     z-index: 1;
-   
+
 }
 
-.hero-content{
+.hero-content {
     position: relative;
     z-index: 2;
     max-width: 800px;
     padding: 0 20px;
-    
+
 }
-.hero-content h1{
+
+.hero-content h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #192c59;
 }
-.hero-content p{
+
+.hero-content p {
     font-size: 1.5rem;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #232b34;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #232b34;
 
 }
 
-.hero-buttons{
+.hero-buttons {
     display: flex;
-    gap:15px;
+    gap: 15px;
     justify-content: center;
 }
 
-.btn{
+.btn {
     padding: 12px 28px;
     border-radius: 25px;
     text-decoration: none;
@@ -85,24 +87,103 @@ body {
 }
 
 .btn-primary {
-  background-color: #f04e23;
-  color: #ffffff;
-  border:  #f04e23;
+    background-color: #f04e23;
+    color: #ffffff;
+    border: #f04e23;
 }
+
 .btn-primary:hover {
-  background-color: #e9e3e1;
+    background-color: #e9e3e1;
     color: #0f172a;
 
 
 }
 
 .btn-secondary {
-  background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 .btn-secondary:hover {
-  background-color: #ffffff;
-  color: #0f172a;
+    background-color: #ffffff;
+    color: #0f172a;
+}
+
+
+.expert {
+    display: flex;
+    justify-content: center;
+}
+
+.expert-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: #192c59;
+}
+
+.expert-info p {
+    font-weight: 500;
+    color: #192c59;
+}
+
+.docteors {
+
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    gap: 10px;
+}
+
+
+
+.docteor-card {
+    width: 300px;
+    min-height: 300px;
+    height: auto;
+    background-color: rgba(209, 213, 204, 0.749);
+
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.docteor-img {
+    width: 100%;
+    height: 60%;
+
+
+    object-fit: cover;
+}
+
+.docteor-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+
+}
+
+.docteor-info {
+    width: 100%;
+    height: 40%;
+    padding: 10px 0px;
+
+}
+
+.docteor-info h3 {
+    color: #192c59;
+}
+
+.docteor-info h4 {
+    color: #e62525;
+}
+
+.docteor-info p {
+    font-weight: 450;
 }
